@@ -1,0 +1,1 @@
+export const REQUIRED_FIELD_MESSAGE = 'Esse campo é obrigatório'
