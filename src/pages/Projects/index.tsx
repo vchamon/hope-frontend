@@ -1,4 +1,4 @@
-import { Button, Grid, Typography } from '@mui/material'
+import { Grid, Typography } from '@mui/material'
 
 import CasaIdosos from '../../assets/images/casa-idosos.jpg'
 import Esperancar from '../../assets/images/esperancar.jpg'

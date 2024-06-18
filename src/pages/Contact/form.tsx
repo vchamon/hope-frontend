@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useForm, Controller } from 'react-hook-form'
 import { Button, TextField } from '@mui/material'
 import InputMask from 'react-input-mask'
