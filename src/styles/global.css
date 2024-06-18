@@ -1,3 +1,35 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+  --primary500: #d90034;
+  --primary400: #bf002e;
+  --primary300: #7c001e;
+  --primary200: #480011;
+  --primary100: #270009;
+  --secondary500: #faa935;
+  --secondary400: #f99a12;
+  --secondary300: #a96504;
+  --secondary200: #623a02;
+  --secondary100: #352001;
+  --nursing-home-primary: #00afef;
+  --nursing-home-secondary: #fad156;
+  --hope-primary: #00a859;
+  --hope-secondary: #f4761c;
+  --white: #fff;
+  --grayscale500: #161616;
+  --grayscale400: #6a6c72;
+  --grayscale300: #b6b7bb;
+  --grayscale200: #dedfe4;
+  --grayscale100: #f5f6fa;
+  --light-bronze: #d4a96b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}

@@ -1,0 +1,6 @@
+export const HOME = '/'
+export const HISTORY = '/historia'
+export const PROJECTS = '/projetos'
+export const DONATIONS = '/doacoes'
+export const VOLUNTEERS = '/voluntarios'
+export const CONTACT = '/contato'
