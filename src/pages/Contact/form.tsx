@@ -22,7 +22,7 @@ export const ContactForm = () => {
 
   const submit = useCallback(({ name, phone, subject, message }: FormFields) => {
     const body = `${message}\nAtenciosamente, ${name}\nContato: ${phone}`
-    window.location.href = `mailto:${EMAIL_CONTACT}?subject=${encodeURI(subject)}body=${encodeURI(body)}`
+    window.location.href = `mailto:${EMAIL_CONTACT}?subject=${encodeURI(subject)}&body=${encodeURI(body)}`
   }, [])
 
   return (
