@@ -14,7 +14,7 @@ export const routes = [
     path: DONATIONS
   },
   {
-    title: 'Vonluntários',
+    title: 'Voluntários',
     path: VOLUNTEERS
   },
   {
