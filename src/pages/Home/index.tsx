@@ -2,6 +2,8 @@ import { Button } from '@mui/material'
 import PauloTarso from '../../assets/images/paulo-de-tarso.png'
 import { Link } from 'react-router-dom'
 import { CONTACT, DONATIONS, HISTORY, PROJECTS } from '../../config/routes'
+import Senac1 from '../../assets/images/senac-1.jpg'
+import Senac2 from '../../assets/images/senac-2.jpg'
 
 export const Home = () => {
   return (
@@ -111,6 +113,39 @@ export const Home = () => {
                   Entrar em contato
                 </Link>
               </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-grayscale100">
+        <div className='container mx-auto px-8 flex flex-col py-16'>
+          <h2 className="text-primary500 text-3xl font-semibold">
+            Parcerias
+          </h2>
+          <div className='flex flex-col pt-16 gap-8'>
+            <h2 className="text-xl font-semibold">
+              Oportunidade!
+            </h2>
+            <div className='flex flex-col gap-2'>
+              <p>
+                Cursos gratuitos para você ganhar o mercado de trabalho.
+              </p>
+              <p>
+                Saiba mais pelo nosso telefone <span className='font-semibold'>(31) 9 7210-0062</span>.
+              </p>
+              <p>
+                <span className='font-semibold'>Vagas limitadas!</span>
+              </p>
+            </div>
+            <p className='text-lg'>
+              Iniciativa <span className='font-semibold text-secondary500'>SENAC+</span> & <span className='font-semibold text-hope-primary'>Programa</span> <span className='font-semibold text-hope-secondary'>ESPERANÇAR</span>.
+            </p>
+          </div>
+          <div className='flex flex-col pt-16'>
+            <div className="flex max-md:flex-col items-center justify-evenly gap-8">
+              <img className='partnerships-image' src={Senac1} />
+              <img className='partnerships-image' src={Senac2} />
             </div>
           </div>
         </div>

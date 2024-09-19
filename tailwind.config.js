@@ -22,7 +22,9 @@ export default {
         'grayscale300': 'var(--grayscale300)',
         'grayscale200': 'var(--grayscale200)',
         'grayscale100': 'var(--grayscale100)',
-        'light-bronze': 'var(--light-bronze)'
+        'light-bronze': 'var(--light-bronze)',
+        'hope-primary': 'var(--hope-primary)',
+        'hope-secondary': 'var(--hope-secondary)',
       }
     },
   },
