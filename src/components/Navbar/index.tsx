@@ -44,12 +44,12 @@ export const Navbar = ({ routes }: NavbarProps) => {
 
   return (
     <nav>
-      <div className='logo'>
+      <div className='logo' onClick={() => setIsMenuOpen(false)}>
         <NavLink to={HOME}>
           <img src={WhiteLogo} />
         </NavLink>
       </div>
-      <div className='full-logo'>
+      <div className='full-logo' onClick={() => setIsMenuOpen(false)}>
         <NavLink to={HOME}>
           <img src={FullWhiteLogo} />
         </NavLink>

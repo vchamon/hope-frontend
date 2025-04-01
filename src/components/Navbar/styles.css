@@ -17,7 +17,6 @@ nav {
 
 .navbar li {
   list-style: none;
-  padding: 0 20px;
   position: relative;
 }
 
@@ -90,7 +89,7 @@ nav {
     flex-direction: column;
     height: 100vh;
     justify-content: flex-start;
-    padding: 40px 0 0 10px;
+    padding: 30px;
     position: fixed;
     right: -300px;
     top: 90px;
@@ -103,7 +102,7 @@ nav {
   }
 
   .navbar li {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 
   .mobile {

@@ -63,15 +63,15 @@ export const Contact = () => (
                 Redes sociais
               </h2>
               <div className='flex flex-col gap-1 justify-center'>
-                <div className='flex items-center gap-2 cursor-pointer hover:text-primary500 transition ease-in'>
+                <div className='flex max-w-fit items-center gap-2 cursor-pointer hover:text-primary500 transition ease-in'>
                   <FacebookIcon fontSize='large' />
                   <a href="https://facebook.com/larespiritapaulodetarso7L">Facebook</a>
                 </div>
-                <div className='flex items-center gap-2 cursor-pointer hover:text-primary500 transition ease-in'>
+                <div className='flex max-w-fit items-center gap-2 cursor-pointer hover:text-primary500 transition ease-in'>
                   <InstagramIcon fontSize='large' />
                   <a href="https://instagram.com/larespiritapaulodetarso">Instagram</a>
                 </div>
-                <div className='flex items-center gap-2 cursor-pointer hover:text-primary500 transition ease-in'>
+                <div className='flex max-w-fit items-center gap-2 cursor-pointer hover:text-primary500 transition ease-in'>
                   <YouTubeIcon fontSize='large' />
                   <a href="https://youtube.com">YouTube</a>
                 </div>
