@@ -1,16 +1,20 @@
 import { Button } from '@mui/material'
 import PauloTarso from '../../assets/images/paulo-de-tarso.png'
 import { Link } from 'react-router-dom'
-import { CONTACT, DONATIONS, HISTORY, PROJECTS } from '../../config/routes'
-import Senac1 from '../../assets/images/senac-1.jpg'
-import Senac2 from '../../assets/images/senac-2.jpg'
+import { CONTACT, DONATIONS, HISTORY, PROJECTS, VOLUNTEERS } from '../../config/routes'
 
 export const Home = () => {
   return (
     <>
-      <section>
+      {/* <section>
         <div className='absolute w-full max-h-96 max-lg:max-h-80 max-md:max-h-48 max-sm:max-h-36 h-full bg-gradient-to-b from-transparent to-white' />
         <img src={PauloTarso} className="w-full max-h-96 max-lg:max-h-80 max-md:max-h-48 max-sm:max-h-36" />
+      </section> */}
+      <section>
+        <div className='relative w-full max-h-96 max-lg:max-h-80 max-md:max-h-48 max-sm:max-h-36'>
+          <div className='absolute top-px w-full h-full bg-gradient-to-b from-transparent to-white' />
+          <img src={PauloTarso} className="w-full max-h-96 max-lg:max-h-80 max-md:max-h-48 max-sm:max-h-36" />
+        </div>
       </section>
 
       <section>
@@ -88,7 +92,7 @@ export const Home = () => {
             <div className="flex flex-col items-start max-md:items-center gap-8">
               <p>Seja um herói da mudança! Descubra como se tornar um voluntário e fazer parte da nossa equipe dedicada. Compartilhe seu tempo, habilidades e paixão para causar um impacto positivo em nossa comunidade. Juntos, podemos fazer muito mais.</p>
               <Button variant='contained' style={{ backgroundColor: 'var(--primary500', color: 'white' }}>
-                <Link to={DONATIONS}>
+                <Link to={VOLUNTEERS}>
                   Seja um voluntário
                 </Link>
               </Button>
@@ -113,39 +117,6 @@ export const Home = () => {
                   Entrar em contato
                 </Link>
               </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-grayscale100">
-        <div className='container mx-auto px-8 flex flex-col py-16'>
-          <h2 className="text-primary500 text-3xl font-semibold">
-            Parcerias
-          </h2>
-          <div className='flex flex-col pt-16 gap-8'>
-            <h2 className="text-xl font-semibold">
-              Oportunidade!
-            </h2>
-            <div className='flex flex-col gap-2'>
-              <p>
-                Cursos gratuitos para você ganhar o mercado de trabalho.
-              </p>
-              <p>
-                Saiba mais pelo nosso telefone <span className='font-semibold'>(31) 9 7210-0062</span>.
-              </p>
-              <p>
-                <span className='font-semibold'>Vagas limitadas!</span>
-              </p>
-            </div>
-            <p className='text-lg'>
-              Iniciativa <span className='font-semibold text-secondary500'>SENAC+</span> & <span className='font-semibold text-hope-primary'>Programa</span> <span className='font-semibold text-hope-secondary'>ESPERANÇAR</span>.
-            </p>
-          </div>
-          <div className='flex flex-col pt-16'>
-            <div className="flex max-md:flex-col items-center justify-evenly gap-8">
-              <img className='partnerships-image' src={Senac1} />
-              <img className='partnerships-image' src={Senac2} />
             </div>
           </div>
         </div>
