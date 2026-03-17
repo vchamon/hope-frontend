@@ -4,9 +4,9 @@ import EmailIcon from '@mui/icons-material/Email'
 import LocationOnIcon from '@mui/icons-material/LocationOn'
 import FacebookIcon from '@mui/icons-material/Facebook'
 import InstagramIcon from '@mui/icons-material/Instagram'
-import YouTubeIcon from '@mui/icons-material/YouTube'
 
 import { ContactForm } from './form'
+import { Contacts, SocialMedia } from '../../config/constants'
 
 export const Contact = () => (
   <>
@@ -36,17 +36,17 @@ export const Contact = () => (
             <div className='flex flex-col gap-2 mb-8'>
               <div className='flex gap-2'>
                 <PhoneIcon />
-                <p>(31) 3773-3809</p>
+                <p>{Contacts.PHONE}</p>
               </div>
 
               <div className='flex gap-2'>
                 <WhatsAppIcon />
-                <p>(31) 9 7210-0062</p>
+                <p>{Contacts.WHATSAPP}</p>
               </div>
 
               <div className='flex gap-2'>
                 <EmailIcon />
-                <p>contato@larespiritapaulodetarso.com.br</p>
+                <p>{Contacts.EMAIL}</p>
               </div>
 
               <div className='flex gap-2'>
@@ -65,15 +65,15 @@ export const Contact = () => (
               <div className='flex flex-col gap-1 justify-center'>
                 <div className='flex max-w-fit items-center gap-2 cursor-pointer hover:text-primary500 transition ease-in'>
                   <FacebookIcon fontSize='large' />
-                  <a href="https://facebook.com/larespiritapaulodetarso7L">Facebook</a>
+                  <a href={SocialMedia.FACEBOOK}>Facebook</a>
                 </div>
                 <div className='flex max-w-fit items-center gap-2 cursor-pointer hover:text-primary500 transition ease-in'>
                   <InstagramIcon fontSize='large' />
-                  <a href="https://instagram.com/larespiritapaulodetarso">Instagram</a>
+                  <a href={SocialMedia.INSTAGRAM}>Instagram</a>
                 </div>
                 <div className='flex max-w-fit items-center gap-2 cursor-pointer hover:text-primary500 transition ease-in'>
-                  <YouTubeIcon fontSize='large' />
-                  <a href="https://youtube.com">YouTube</a>
+                  <WhatsAppIcon fontSize='large' />
+                  <a href={SocialMedia.WHATSAPP}>WhatsApp</a>
                 </div>
               </div>
             </div>

@@ -3,8 +3,7 @@ import { useForm, Controller } from 'react-hook-form'
 import { Button, TextField } from '@mui/material'
 import InputMask from 'react-input-mask'
 import { useCallback } from 'react'
-
-const EMAIL_CONTACT = 'contato@paulodetarso.com.br'
+import { Contacts } from '../../config/constants'
 
 export interface FormFields {
   name: string
@@ -22,7 +21,7 @@ export const ContactForm = () => {
 
   const submit = useCallback(({ name, phone, subject, message }: FormFields) => {
     const body = `${message}\nAtenciosamente, ${name}\nContato: ${phone}`
-    window.location.href = `mailto:${EMAIL_CONTACT}?subject=${encodeURI(subject)}&body=${encodeURI(body)}`
+    window.location.href = `mailto:${Contacts.EMAIL}?subject=${encodeURI(subject)}&body=${encodeURI(body)}`
   }, [])
 
   return (
@@ -83,7 +82,7 @@ export const ContactForm = () => {
                   />
                 )}
               </InputMask>
-              
+
               {errors.phone && (
                 <span className='text-red-600 text-xs'>{errors.phone.message}</span>
               )}

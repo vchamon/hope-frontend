@@ -4,11 +4,11 @@ import Logo from '../../assets/images/logo.png'
 import FullLogo from '../../assets/images/full-logo-1.png'
 import FacebookIcon from '@mui/icons-material/Facebook'
 import InstagramIcon from '@mui/icons-material/Instagram'
-import YouTubeIcon from '@mui/icons-material/YouTube'
 import PhoneIcon from '@mui/icons-material/Phone'
 import WhatsAppIcon from '@mui/icons-material/WhatsApp'
 import EmailIcon from '@mui/icons-material/Email'
 import LocationOnIcon from '@mui/icons-material/LocationOn'
+import { Contacts, SocialMedia } from '../../config/constants'
 import { CONTACT, DONATIONS, HISTORY, PROJECTS, VOLUNTEERS } from '../../config/routes'
 
 export const Footer = () => {
@@ -34,15 +34,15 @@ export const Footer = () => {
         <p className='font-bold mb-2 text-primary500'>Redes sociais</p>
         <div className='flex items-center gap-2 cursor-pointer hover:text-primary500 transition ease-in'>
           <FacebookIcon fontSize='large' />
-          <a href="https://facebook.com/larespiritapaulodetarso7L">Facebook</a>
+          <a href={SocialMedia.FACEBOOK}>Facebook</a>
         </div>
         <div className='flex items-center gap-2 cursor-pointer hover:text-primary500 transition ease-in'>
           <InstagramIcon fontSize='large' />
-          <a href="https://instagram.com/larespiritapaulodetarso">Instagram</a>
+          <a href={SocialMedia.INSTAGRAM}>Instagram</a>
         </div>
         <div className='flex items-center gap-2 cursor-pointer hover:text-primary500 transition ease-in'>
-          <YouTubeIcon fontSize='large' />
-          <a href="https://youtube.com">YouTube</a>
+          <WhatsAppIcon fontSize='large' />
+          <a href={SocialMedia.WHATSAPP}>WhatsApp</a>
         </div>
       </div>
 
@@ -51,17 +51,17 @@ export const Footer = () => {
         <div className='flex flex-col gap-2 mb-8'>
           <div className='flex gap-2'>
             <PhoneIcon />
-            <p>(31) 3773-3809</p>
+            <p>{Contacts.PHONE}</p>
           </div>
 
           <div className='flex gap-2'>
             <WhatsAppIcon />
-            <p>(31) 9 7210-0062</p>
+            <p>{Contacts.WHATSAPP}</p>
           </div>
 
           <div className='flex gap-2'>
             <EmailIcon />
-            <p>contato@larespiritapaulodetarso.com.br</p>
+            <p>{Contacts.EMAIL}</p>
           </div>
 
           <div className='flex gap-2'>

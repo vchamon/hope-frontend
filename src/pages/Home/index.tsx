@@ -6,10 +6,6 @@ import { CONTACT, DONATIONS, HISTORY, PROJECTS, VOLUNTEERS } from '../../config/
 export const Home = () => {
   return (
     <>
-      {/* <section>
-        <div className='absolute w-full max-h-96 max-lg:max-h-80 max-md:max-h-48 max-sm:max-h-36 h-full bg-gradient-to-b from-transparent to-white' />
-        <img src={PauloTarso} className="w-full max-h-96 max-lg:max-h-80 max-md:max-h-48 max-sm:max-h-36" />
-      </section> */}
       <section>
         <div className='relative w-full max-h-96 max-lg:max-h-80 max-md:max-h-48 max-sm:max-h-36'>
           <div className='absolute top-px w-full h-full bg-gradient-to-b from-transparent to-white' />
@@ -19,13 +15,25 @@ export const Home = () => {
 
       <section>
         <div className='container mx-auto px-8 flex flex-col gap-8 py-16'>
+          <div className="flex max-md:flex-col items-center justify-evenly gap-8">
+            <div className="flex flex-col items-end max-md:items-center gap-8">
+              <p>
+                O Lar Espírita Paulo de Tarso é uma instituição filantrópica dedicada ao amparo de crianças, jovens, idosos e famílias em situação de vulnerabilidade social. A entidade desenvolve ações de assistência social, apoio e acolhimento, buscando promover dignidade, solidariedade e desenvolvimento humano.
+              </p>
+              <p>
+                Fundado em 2 de Julho de 1966 por Ertúzio de Souza Calazans, sua esposa Maria Virgínia Lavarini Calazans (Geninha) e amigos de ideal, o Lar atua com base nos pricípios da fraternidade e da caridade inspirador na Doutrina Espírita, mantendo suas atividades por meio do trabalho voluntário e da colaboração da comunidade.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-grayscale100">
+        <div className='container mx-auto px-8 flex flex-col gap-8 py-16'>
           <h2 className="text-primary500 text-3xl font-semibold">
             História
           </h2>
           <div className="flex max-md:flex-col items-center justify-evenly gap-8">
-            {/* <div className="py-8 max-w-md">
-              <img src="https://picsum.photos/900/600" />
-            </div> */}
             <div className="flex flex-col items-end max-md:items-center gap-8">
               <p>Conheça a nossa história e descubra como a nossa organização de caridade foi fundada. Saiba mais sobre os valores que nos impulsionam e inspire-se com as histórias de sucesso dos projetos anteriores.</p>
               <Button variant='contained' style={{ backgroundColor: 'var(--primary500', color: 'white' }}>
@@ -38,15 +46,12 @@ export const Home = () => {
         </div>
       </section>
 
-      <section className="bg-grayscale100">
+      <section>
         <div className='container mx-auto px-8 flex flex-col gap-8 py-16'>
           <h2 className="text-primary500 text-3xl font-semibold">
             Projetos
           </h2>
           <div className="flex flex-row-reverse max-md:flex-col items-center justify-evenly gap-8">
-            {/* <div className="py-8 max-w-md">
-              <img src="https://picsum.photos/1200/800" />
-            </div> */}
             <div className="flex flex-col items-start max-md:items-center gap-8">
               <p>Descubra os projetos em andamento e as iniciativas atuais. Veja como estamos trabalhando para melhorar a vida de pessoas em situação de vulnerabilidade. Cada projeto tem um propósito único e você pode encontrar aquele que mais ressoa com você.</p>
               <Button variant='contained' style={{ backgroundColor: 'var(--primary500', color: 'white' }}>
@@ -59,15 +64,12 @@ export const Home = () => {
         </div>
       </section>
 
-      <section>
+      <section className="bg-grayscale100">
         <div className='container mx-auto px-8 flex flex-col gap-8 py-16'>
           <h2 className="text-primary500 text-3xl font-semibold">
             Doações
           </h2>
           <div className="flex max-md:flex-col items-center justify-evenly gap-8">
-            {/* <div className="py-8 max-w-md">
-              <img src="https://picsum.photos/1500/1000" />
-            </div> */}
             <div className="flex flex-col items-end max-md:items-center gap-8">
               <p>Faça uma diferença real através de suas doações. Saiba como o seu apoio financeiro pode ajudar a impulsionar nossos projetos e alcançar impactos significativos. Cada contribuição é valiosa e pode mudar vidas.</p>
               <Button variant='contained' style={{ backgroundColor: 'var(--primary500', color: 'white' }}>
@@ -80,15 +82,12 @@ export const Home = () => {
         </div>
       </section>
 
-      <section className="bg-grayscale100">
+      <section>
         <div className='container mx-auto px-8 flex flex-col gap-8 py-16'>
           <h2 className="text-primary500 text-3xl font-semibold">
             Voluntários
           </h2>
           <div className="flex flex-row-reverse max-md:flex-col items-center justify-evenly gap-8">
-            {/* <div className="py-8 max-w-md">
-              <img src="https://picsum.photos/2100/1400" />
-            </div> */}
             <div className="flex flex-col items-start max-md:items-center gap-8">
               <p>Seja um herói da mudança! Descubra como se tornar um voluntário e fazer parte da nossa equipe dedicada. Compartilhe seu tempo, habilidades e paixão para causar um impacto positivo em nossa comunidade. Juntos, podemos fazer muito mais.</p>
               <Button variant='contained' style={{ backgroundColor: 'var(--primary500', color: 'white' }}>
@@ -101,15 +100,12 @@ export const Home = () => {
         </div>
       </section>
 
-      <section>
+      <section className="bg-grayscale100">
         <div className='container mx-auto px-8 flex flex-col gap-8 py-16'>
           <h2 className="text-primary500 text-3xl font-semibold">
             Contato
           </h2>
           <div className="flex max-md:flex-col items-center justify-evenly gap-8">
-            {/* <div className="py-8 max-w-md">
-              <img src="https://picsum.photos/2400/1600" />
-            </div> */}
             <div className="flex flex-col items-end max-md:items-center gap-8">
             <p>Tem alguma pergunta, ideia ou deseja entrar em contato conosco? Não hesite em nos contatar. Estamos aqui para ouvir e apoiar. Utilize nossas informações de contato para nos enviar uma mensagem e responderemos o mais rápido possível.</p>
               <Button variant='contained' style={{ backgroundColor: 'var(--primary500', color: 'white' }}>

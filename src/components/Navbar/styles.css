@@ -15,6 +15,16 @@ nav {
   justify-content: center;
 }
 
+@media screen and (min-width: 769px) {
+  nav {
+    padding: 20px clamp(40px, 6vw, 120px);
+  }
+
+  .navbar {
+    gap: 2rem;
+  }
+}
+
 .navbar li {
   list-style: none;
   position: relative;
