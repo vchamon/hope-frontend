@@ -1,9 +1,11 @@
 import { Grid, Typography } from '@mui/material'
 
 import CasaIdosos from '../../assets/images/casa-idosos.jpg'
+import ClubeMaes from '../../assets/images/clube-maes.png'
 import Esperancar from '../../assets/images/esperancar.jpg'
 
 import './styles.css'
+import { SocialMedia } from '../../config/constants'
 
 export const Projects = () => {
   return (
@@ -65,10 +67,28 @@ export const Projects = () => {
             <Grid item lg={6} md={12} display="flex" justifyContent="center" width="100%">
               <img className='project-image' src={Esperancar} />
             </Grid>
+
+            <Grid item lg={6} md={12} display="flex" justifyContent="center" width="100%">
+              <img className='project-image' src={ClubeMaes} />
+            </Grid>
+            <Grid item lg={6} md={12}>
+              <Typography variant='h6' color="var(--primary500)" mb='1rem'>Clube de Mães</Typography>
+              <Typography>
+              O Clube de Mães do Paulo de Tarso é o projeto mais antigo ainda em funcionamento na instituição. Criado inicialmente para apoiar as crianças internadas, tinha como foco oferecer formação para meninas, com cursos como bordado e crochê, além de incentivar a profissionalização. Com o tempo, foi aberto à comunidade e passou por reformulações.
+              <br />
+              <br />
+              Hoje, além de contribuir com a instituição para o angariamento de fundos através da venda do artesanato produzido, o clube é um importante espaço de convivência e voluntariado, especialmente para mulheres idosas, fortalecendo o senso de pertencimento e utilidade.
+              <br />
+              <br />
+              As atividades acontecem às terças-feiras, das 13h às 15h, e são abertas a novas participantes.
+              <br />
+              <br />
+              Quer participar? <a href={SocialMedia.WHATSAPP} className="text-primary500">Entre em contato</a>
+              </Typography>
+            </Grid>
           </Grid>
         </div>
       </section>
-
     </>
   )
 }

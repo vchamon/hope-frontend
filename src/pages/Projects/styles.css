@@ -6,6 +6,14 @@
   order: 2;
 }
 
+.projects-container div:nth-child(5) {
+  order: 3;
+}
+
+.projects-container div:nth-child(6) {
+  order: 4;
+}
+
 .project-image {
   max-height: 300px;
   max-width: 100%;
