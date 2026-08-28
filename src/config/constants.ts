@@ -5,7 +5,7 @@ export enum SocialMedia {
 }
 
 export enum Contacts {
-    'EMAIL' = 'contato@larespiritapaulodetarso.com.br',
+    'EMAIL' = 'larespiritapaulodetarso@gmail.com',
     'PHONE' = '(31) 3773-3809',
     'WHATSAPP' = '(31) 9 7210-0062',
 }
